@@ -1,7 +1,7 @@
 lister
 ======
 
-a listing module with pagination and filtering built in.
+a listing module with pagination and filtering built in. Requires jQuery and low_ghost.js.
 
 INSTRUCTIONS
 
@@ -30,7 +30,7 @@ DEFAULTS
         autoSortKey : "", //Leave blank or choose same selector string as listKeys1 or listKeys2
                           //ex. ".key1"
         //pagination
-        itemsPerPage : 0, //Leave at this inoridinately high number if no pagination needed
+        itemsPerPage : 0, //leave at zero to opt out of pagination (bit faster)
         paginationElement : "#pagination", //replace to choose existing element or name of element
                                            //to be appended. Use only ID as selector ex. "#page-numbers"
         paginationLeft : 3,
