@@ -1,4 +1,4 @@
 lister
 ======
 
-a list.js simulacrum with pagination and filtering built in
+a listing module with pagination and filtering built in
