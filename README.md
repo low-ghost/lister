@@ -7,17 +7,18 @@ INSTRUCTIONS
 
 In js file, add an options variable with an object formatted similarly to settings default object bellow. If the default is acceptable, simply don't include it. Example:
    
-   var options = {   itemsPerPage : 4,
-                     searchInput : "#search",
-                     paginationElement : "#page-box",
-                     autoSort : "asc",
-                     autoSortKey : ".title"
-                  };
-   var listKeys = [".title", ".author", ".description"], // list keys and sortKeys match 1:1, so if
-       sortKeys = ["none", "#sort-author-button"];          a key should not be sortable, include
+    var options = { itemsPerPage : 4,
+        searchInput : "#search",
+        paginationElement : "#page-box",
+        autoSort : "asc",
+        autoSortKey : ".title"
+    };
+
+    var listKeys = [".title", ".author", ".description"], // list keys and sortKeys match 1:1, so if
+        sortKeys = ["none", "#sort-author-button"];          a key should not be sortable, include
                                                             a string signifing this (not empty!) or
                                                             ignore end values
-   var list = new Lister(options, listKeys, sortKeys);
+    var list = new Lister(options, listKeys, sortKeys);
 
 DEFAULTS
 
